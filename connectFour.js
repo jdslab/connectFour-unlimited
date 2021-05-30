@@ -23,10 +23,10 @@ const sketch = (s) => {
     s.stroke(128);
     s.strokeWeight(2);
     s.noFill();
-    for(let i = 0; i < s.windowWidth/20; i++) {
+    for(let i = 0; i < s.width/20; i++) {
       s.line(i * 20, 0, i * 20, Math.floor(s.height/20)*20);
     }
-    for(let i = 0; i < s.windowHeight/20; i++) {
+    for(let i = 0; i < s.height/20; i++) {
       s.line(0, i * 20, Math.floor(s.width/20)*20, i * 20);
     }
     gameField.forEach(checker => {
